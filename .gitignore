@@ -1,0 +1,6 @@
+#Exclusión de los node_modules
+02-PruebasReconocimiento/node_modules
+
+
+#Exclusión de los resultados
+02-PruebasReconocimiento/results
