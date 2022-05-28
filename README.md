@@ -227,9 +227,9 @@ Las incidencias generadas en las pruebas se han reportado en el sistema de regis
 ## Instrucciones adicionales
 Para ejecutar estas pruebas realize los siguientes pasos:
 
-1. Clone el repositorio en la ubicación de su preferencia través del comando "git clone https://github.com/JosePalacioM/PruebasDatosGenerados.git".
+1. Clone el repositorio en la ubicación de su preferencia través del comando "git clone https://github.com/AAlbaB/ProyectoFinal_Pruebas.git".
 2. Ingrese a la carpeta creada
-3. Ingrese con una consola a la misma carpeta
+3. Ingrese con una consola a la misma carpeta y luego ingrese a la carpeta 03-ValidacionDatos
 4. Ejecute el comando "npm install cypress"
 5. Ejecute el comando "npm install @faker-js/faker --save-dev"
 6. Ejecute el comando "cypress open"
