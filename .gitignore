@@ -4,3 +4,10 @@
 
 #Exclusión de los resultados
 02-PruebasReconocimiento/results
+
+
+#Validación de datos
+03-ValidacionDatos/node_modules
+03-ValidacionDatos/cypress/videos
+03-ValidacionDatos/cypress/screenshots
+03-ValidacionDatos/cypress/downloads
