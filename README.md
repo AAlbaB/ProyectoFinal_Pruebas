@@ -27,7 +27,8 @@ Imagen 1.
 Teniedo en cuenta las caracteristicas de las pruebas exploratorias, las cuales son una forma para crear la primera versión del inventario de pruebas a realizar o para actualizar inventarios existentes, dado que son pruebas 
 sirven para detectar de forma manual defectos en la aplicación, y permiten recorrer la aplicación de forma manual, a continuacion se  puede observar el informe de los diferentes escenarios en los cuales se desarrollaron las pruebas, resaltando la principal funcionalidad, siendo esta la entrada de datos en las diferente secciones que involucra la aplicacion (post, tags, page, member, settings, etc.).
 
-
+Informe pruebas exploratorias
+https://uniandes-my.sharepoint.com/:x:/g/personal/df_ramirezr1_uniandes_edu_co/EdSH3lPBzBpDh7dlepbqWkcB7XLjk963tlZMDRQ3vU4vhw?e=nd57NY).
 
 
 
