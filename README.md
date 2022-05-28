@@ -6,6 +6,19 @@
 - Diego Fernando Castro Plazas - df.castrop1@uniandes.edu.co
 - Diego Fernando Ramírez Rodríguez - df.ramirezr1@uniandes.edu.co
 
+### Consideraciones antes y durante la ejecución de las pruebas
+1. Es importante tener en cuenta que antes de inicilizar las pruebas en cypress, se debe crear el siguiente usuario administrador manualmente dentro de la aplicación de Ghost llendo al ling http://localhost:3002/ghost/ y poniendo la siguiente información como se muestra en la imagen 1.
+
+Site title: 'A su elección'
+Full name: 'A su elección'
+Email address: hola@miso.com
+Password: Misotest2022*
+
+![image](https://user-images.githubusercontent.com/98669202/169715537-0d44cc44-82b7-4024-aac0-b45b89cc4c64.png)
+  
+Imagen 1.
+
+
 # 02. Ejecución de Pruebas de Reconocimiento
 1. Tener en ejecución Ghost en el puerto 3002 con las credenciales anteriormente mencionadas
 2. Despúes de clonar el repositorio en la máquina local con el comnado git clone https://github.com/AAlbaB/ProyectoFinal_Pruebas.git
@@ -34,23 +47,12 @@ La para obtener y ejecutar la versión 4.47.0 de la aplicación Ghost se descarg
 
 Una vez ejecutado este comando podrá ingresar a la url http://localhost:3002 para ver la aplicación Ghost corriendo.
 
-#### Consideraciones antes y durante la ejecución de las pruebas
-1. Es importante tener en cuenta que antes de inicilizar las pruebas en cypress, se debe crear el siguiente usuario administrador manualmente dentro de la aplicación de Ghost llendo al ling http://localhost:3002/ghost/ y poniendo la siguiente información como se muestra en la imagen 1.
 
-Site title: 'A su elección'
-Full name: 'A su elección'
-Email address: hola@miso.com
-Password: Misotest2022*
-
-![image](https://user-images.githubusercontent.com/98669202/169715537-0d44cc44-82b7-4024-aac0-b45b89cc4c64.png)
-  
-Imagen 1.
-
-2. Para la ejecución de algunas pruebas se utilizó la función xpath de cypress, la cual, para ser usada se debe instalar con el siguiente comando:
+1. Para la ejecución de algunas pruebas se utilizó la función xpath de cypress, la cual, para ser usada se debe instalar con el siguiente comando:
   
   npm install -D cypress-xpath
   
-  Además la línea que dice require('cypress-xpath') en el archivo./cypress/support/index.js no debe estar comentada
+  Además la línea que dice require('cypress-xpath') en el archivo ./03-ValidacionDatos/cypress/support/index.js no debe estar comentada
 
 3. Tambien importante tener en cuenta que la aplicación de Ghost permite un máximo de 100 ingresos como usuario administrador por dirección IP cada hora y como nuestras pruebas realizarán al rededor de 120 ingresos, cuando las pruebas fallen y generen la alerta que se muestra en la imagen 2, será necesario detener el contenedor de docker (imagen 3), borrar el contenedor (imagen 4), borrar el volumen (imagen 5) y volver a ejecutar el comando docker runn .. explicado en el punto anterior
 
