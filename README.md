@@ -18,6 +18,18 @@ Password: Misotest2022*
   
 Imagen 1.
 
+# 01. Ejecución de Pruebas de exploratorias.
+1. Tener en ejecución Ghost en el puerto 3002 con las credenciales anteriormente mencionadas
+2. Despúes de clonar el repositorio en la máquina local con el comnado git clone https://github.com/AAlbaB/ProyectoFinal_Pruebas.git
+3. Ubiquese en la carpeta ../ProyectoFinal_Pruebas/02-PruebasReconocimiento
+4. Inicie la aplicacion con ghost start.
+
+Teniedo en cuenta las caracteristicas de las pruebas exploratorias, las cuales son una forma para crear la primera versión del inventario de pruebas a realizar o para actualizar inventarios existentes, dado que son pruebas 
+sirven para detectar de forma manual defectos en la aplicación, y permiten recorrer la aplicación de forma manual, a continuacion se  puede observar el informe de los diferentes escenarios en los cuales se desarrollaron las pruebas, resaltando la principal funcionalidad, siendo esta la entrada de datos en las diferente secciones que involucra la aplicacion (post, tags, page, member, settings, etc.).
+
+
+
+
 
 # 02. Ejecución de Pruebas de Reconocimiento
 1. Tener en ejecución Ghost en el puerto 3002 con las credenciales anteriormente mencionadas
