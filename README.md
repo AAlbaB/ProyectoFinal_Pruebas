@@ -251,3 +251,6 @@ Para ejecutar estas pruebas realize los siguientes pasos:
 6. Ejecute el comando `cypress open`
 7. El comando anterior desplegará la consolta de Cypress y en su interior, cada uno de los casos de prueba generados.
 8. Ejecute cada uno de los archivos de pruebas
+
+## Video presentación proyecto final
+https://uniandes.sharepoint.com/:v:/s/Pruebasautomatizadas93/ESyxFQteXqJCmfA12tASgDYBe3vk43SvrGPyoRsRanE_mg?e=mgryfv
