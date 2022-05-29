@@ -15,7 +15,7 @@ De acuerdo con esta estrategia, para esta semana se estipuló realizar pruebas d
 ### Consideraciones antes y durante la ejecución de las pruebas
 1. La para obtener y ejecutar la versión 4.47.0 de la aplicación Ghost se descargó una imagen de esta versión en Docker y se le asignó el puerto 3002 con el siguiente comando en la terminal de PowerShell:
 
-  <docker run -d -e url=http://localhost:3002 -p 3002:2368 --name ghost_4.47.0 ghost:4.47.0>
+  `docker run -d -e url=http://localhost:3002 -p 3002:2368 --name ghost_4.47.0 ghost:4.47.0`
 
 Una vez ejecutado este comando podrá ingresar a la url http://localhost:3002 para ver la aplicación Ghost corriendo.
 
@@ -32,9 +32,8 @@ Imagen 1.
 
 # 01. Ejecución de Pruebas de exploratorias.
 1. Tener en ejecución Ghost en el puerto 3002 con las credenciales anteriormente mencionadas
-2. Despúes de clonar el repositorio en la máquina local con el comnado git clone https://github.com/AAlbaB/ProyectoFinal_Pruebas.git
-3. Ubiquese en la carpeta ../ProyectoFinal_Pruebas/02-PruebasReconocimiento
-4. Inicie la aplicacion con ghost start.
+2. Despúes de clonar el repositorio en la máquina local con el comnado `git clone https://github.com/AAlbaB/ProyectoFinal_Pruebas.git`
+3. Inicie la aplicación de Ghost según las instrucciones anteriores
 
 Teniedo en cuenta las caracteristicas de las pruebas exploratorias, las cuales son una forma para crear la primera versión del inventario de pruebas a realizar o para actualizar inventarios existentes, dado que son pruebas 
 sirven para detectar de forma manual defectos en la aplicación, y permiten recorrer la aplicación de forma manual, a continuacion se  puede observar el informe de los diferentes escenarios en los cuales se desarrollaron las pruebas, resaltando la principal funcionalidad, siendo esta la entrada de datos en las diferente secciones que involucra la aplicacion (post, tags, page, member, settings, etc.).
@@ -46,10 +45,10 @@ https://uniandes-my.sharepoint.com/:x:/g/personal/df_ramirezr1_uniandes_edu_co/E
 
 # 02. Ejecución de Pruebas de Reconocimiento
 1. Tener en ejecución Ghost en el puerto 3002 con las credenciales anteriormente mencionadas
-2. Despúes de clonar el repositorio en la máquina local con el comnado git clone https://github.com/AAlbaB/ProyectoFinal_Pruebas.git
+2. Despúes de clonar el repositorio en la máquina local con el comnado `git clone https://github.com/AAlbaB/ProyectoFinal_Pruebas.git`
 3. Ubiquese en la carpeta ../ProyectoFinal_Pruebas/02-PruebasReconocimiento
-4. Se debe instalar en esta carpeta las node_modules con el comando npm install
-5. Ejecutar el comando cypress run -C monkey-config.json para que los Monkey comiencen a explorar la página
+4. Se debe instalar en esta carpeta las node_modules con el comando `npm install`
+5. Ejecutar el comando `cypress run -C monkey-config.json` para que los Monkey comiencen a explorar la página
 6. Los resultados de esta ejecución se encuentran en la carpeta ../ProyectoFinal_Pruebas/02-PruebasReconocimiento/results
 7. Dentro de la carpeta results, se encontrara un archvio html donde hay un resumen de los tipos de evento aleatorios que el monkey realizo y un video que muestra la ejecución de completa de la prueba.
 
@@ -69,7 +68,7 @@ La herramienta seleccionada para realizar las pruebas es Cypress
 
 1. Para la ejecución de algunas pruebas se utilizó la función xpath de cypress, la cual, para ser usada se debe instalar con el siguiente comando:
   
-  npm install -D cypress-xpath
+  `npm install -D cypress-xpath`
   
   Además la línea que dice require('cypress-xpath') en el archivo ./03-ValidacionDatos/cypress/support/index.js no debe estar comentada
 
@@ -101,8 +100,6 @@ Para la generación de datos pseudo aleatorios dinámico, se utilizó la herrami
  Para la generación aleatoria de datos, se utilizó la herramienta faker importando la librería en cada uno de los archivos que se utilizaron para generar los valores aleatorios. De acuerdo a las entradas del escenario de prueba a validar, se hacía uso de los métodos expuestos por la librería faker.
   
  
-  
-
 ## Escenarios
 
 Los 120 escenarios ejecutados, con su respectiva estrategia de generación de datos y su tipo de oráculo se detalla a continuación
@@ -246,11 +243,11 @@ Las incidencias generadas en las pruebas se han reportado en el sistema de regis
 ## Instrucciones adicionales
 Para ejecutar estas pruebas realize los siguientes pasos:
 
-1. Clone el repositorio en la ubicación de su preferencia través del comando "git clone https://github.com/AAlbaB/ProyectoFinal_Pruebas.git".
+1. Clone el repositorio en la ubicación de su preferencia través del comando `git clone https://github.com/AAlbaB/ProyectoFinal_Pruebas.git`.
 2. Ingrese a la carpeta creada
 3. Ingrese con una consola a la misma carpeta y luego ingrese a la carpeta 03-ValidacionDatos
-4. Ejecute el comando "npm install cypress"
-5. Ejecute el comando "npm install @faker-js/faker --save-dev"
-6. Ejecute el comando "cypress open"
+4. Ejecute el comando `npm install cypress`
+5. Ejecute el comando `npm install @faker-js/faker --save-dev`
+6. Ejecute el comando `cypress open`
 7. El comando anterior desplegará la consolta de Cypress y en su interior, cada uno de los casos de prueba generados.
 8. Ejecute cada uno de los archivos de pruebas
